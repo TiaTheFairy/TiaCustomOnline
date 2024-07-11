@@ -1,4 +1,4 @@
-package net.ttfl.code;
+package net.ttfl.code.paper;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -11,6 +11,7 @@ public class TiaCustomOnline extends JavaPlugin {
         CommandHandler commandHandler = new CommandHandler(this);
         getCommand("tiacustomonline").setExecutor(commandHandler);
         getCommand("tco").setExecutor(commandHandler);
+        getServer().getPluginManager().registerEvents(new PingListener(this), this);
         amountCounter = new AmountCounter(this);
     }
 

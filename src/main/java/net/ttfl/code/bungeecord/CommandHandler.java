@@ -1,8 +1,8 @@
-package net.ttfl.code;
+package net.ttfl.code.bungeecord;
 
 import net.md_5.bungee.api.CommandSender;
-import net.md_5.bungee.api.plugin.Command;
 import net.md_5.bungee.api.chat.TextComponent;
+import net.md_5.bungee.api.plugin.Command;
 
 import java.io.File;
 import java.util.ArrayList;

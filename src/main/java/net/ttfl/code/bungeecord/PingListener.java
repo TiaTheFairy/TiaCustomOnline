@@ -1,4 +1,4 @@
-package net.ttfl.code;
+package net.ttfl.code.bungeecord;
 
 import net.md_5.bungee.api.event.ProxyPingEvent;
 import net.md_5.bungee.api.plugin.Listener;

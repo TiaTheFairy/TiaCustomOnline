@@ -1,0 +1,4 @@
+name: TiaCustomOnline
+main: net.ttfl.code.bungeecord.TiaCustomOnline
+version: '${version}'
+author: TiaTheFairyLand

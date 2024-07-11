@@ -1,4 +1,4 @@
-package net.ttfl.code;
+package net.ttfl.code.paper;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

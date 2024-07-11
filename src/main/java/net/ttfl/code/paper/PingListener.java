@@ -1,4 +1,4 @@
-package net.ttfl.code;
+package net.ttfl.code.paper;
 
 import com.destroystokyo.paper.event.server.PaperServerListPingEvent;
 import org.bukkit.event.EventHandler;

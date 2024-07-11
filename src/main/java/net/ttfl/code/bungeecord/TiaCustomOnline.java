@@ -1,4 +1,4 @@
-package net.ttfl.code;
+package net.ttfl.code.bungeecord;
 
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.config.Configuration;
@@ -17,7 +17,6 @@ public class TiaCustomOnline extends Plugin {
     @Override
     public void onEnable() {
         loadConfig();
-
         getProxy().getPluginManager().registerCommand(this, new CommandHandler(this, "tiacustomonline"));
         getProxy().getPluginManager().registerCommand(this, new CommandHandler(this, "tco"));
         getProxy().getPluginManager().registerListener(this, new PingListener(this));

@@ -2,18 +2,6 @@
 #   Visit my site for more Tia's plugin
 #   https://code.ttfl.net/minecraft
 
-
-###################################################
-
-#                Paper Version
-#                     of
-#              Tia Custom Online
-
-# Install this only on Paper and its forks!
-
-###################################################
-
-
 max:
   # Should plugin handle max amount?
   # If true, %max% in this plugin would also use this value.
@@ -29,21 +17,21 @@ online:
   # You can use %online% %max% in math patterns.
   # Use "%online%“ for real online amount.
   # Use "%max%” for real max amount.
-  # For more detailed information, visit the wiki.
+  # For more detailed information, visit https://ezylang.github.io/EvalEx/references/references.html.
 
   modes:
     # Custom math pattern
     custom:
-      amount: "min(%max%, 20 + sqrt(%online%) * 2)"
+      amount: "MIN(%max%, 20 + SQRT(%online%) * %online%)"
 
     random:
       min: "20 + %online%"
-      max: "min(50 + %online%, %max%)"
+      max: "MIN(50 + %online%, %max%)"
 
     timed:
       # Stably increase/decrease and reach min/max at minTime/maxTime
       min: "20 + %online%"
-      max: "min(50 + %online%, %max%)"
+      max: "MIN(50 + %online%, %max%)"
       min-time: 3
       max-time: 18
 
@@ -53,6 +41,6 @@ online:
       min-random: "4"
       max-random: "8"
       min: "20 + %online%"
-      max: "min(50 + %online%, %max%)"
-      min-time: 03
-      max-time: 18
+      max: "MIN(50 + %online%, %max%)"
+      min-time: 7
+      max-time: 20

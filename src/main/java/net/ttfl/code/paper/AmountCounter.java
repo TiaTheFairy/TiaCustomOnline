@@ -1,8 +1,7 @@
-package net.ttfl.code;
+package net.ttfl.code.paper;
 
-import javax.script.ScriptEngine;
-import javax.script.ScriptEngineManager;
-import javax.script.ScriptException;
+import com.ezylang.evalex.Expression;
+import com.ezylang.evalex.data.EvaluationValue;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 
@@ -40,8 +39,8 @@ public class AmountCounter {
             case "random-timed":
                 int minNum1 = count(pattern(plugin.getConfig().getString("online.modes.random-timed.min"), online, max));
                 int maxNum1 = count(pattern(plugin.getConfig().getString("online.modes.random-timed.max"), online, max));
-                int minRandom = plugin.getConfig().getInt("online.modes.random-timed.min-random");
-                int maxRandom = plugin.getConfig().getInt("online.modes.random-timed.max-random");
+                int minRandom = count(pattern(plugin.getConfig().getString("online.modes.random-timed.min-random"), online, max));
+                int maxRandom = count(pattern(plugin.getConfig().getString("online.modes.random-timed.max-random"), online, max));
                 LocalTime minTime1 = LocalTime.of(plugin.getConfig().getInt("online.modes.timed.min-time"), 0);
                 LocalTime maxTime1 = LocalTime.of(plugin.getConfig().getInt("online.modes.timed.max-time"), 0);
                 return getNumByTime(minTime1, maxTime1, minNum1, maxNum1, minRandom, maxRandom);
@@ -60,28 +59,20 @@ public class AmountCounter {
     }
 
     public String pattern(String pattern, int online, int max){
-        pattern.replaceAll("%online%", String.valueOf(online));
-        pattern.replaceAll("%max%", String.valueOf(getMax(online, max)));
+        pattern = pattern.replaceAll("%online%", String.valueOf(online));
+        pattern = pattern.replaceAll("%max%", String.valueOf(getMax(online, max)));
+
         return pattern;
     }
 
     public int count(String expression){
-        expression = expression
-                .replaceAll("\\bmin\\b", "Math.min")
-                .replaceAll("\\bmax\\b", "Math.max");
-
-        ScriptEngineManager sem = new ScriptEngineManager();
-        ScriptEngine se = sem.getEngineByName("JavaScript");
-        se.put("Math", Math.class);
-
+        Expression exp = new Expression(expression);
         try {
-            Object result = se.eval(expression);
-            return (int) result;
-        } catch (ScriptException e) {
-            e.printStackTrace();
+            EvaluationValue result = exp.evaluate();
+            return result.getNumberValue().intValue();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
-
-        return 0;
     }
 
     public int getNumByTime(LocalTime minTime, LocalTime maxTime, int minNum, int maxNum, int minRandom, int maxRandom){

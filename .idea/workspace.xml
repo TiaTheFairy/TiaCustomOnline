@@ -4,33 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f4c1c1b-f511-4914-9514-3ad47ecd51fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bungeecord/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bungeecord/src/main/java/net/ttfl/code/AmountCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bungeecord/src/main/java/net/ttfl/code/CommandHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bungeecord/src/main/java/net/ttfl/code/PingListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bungeecord/src/main/java/net/ttfl/code/TiaCustomOnline.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bungeecord/src/main/resources/bungee.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bungeecord/src/main/resources/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paper/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paper/src/main/java/net/ttfl/code/AmountCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paper/src/main/java/net/ttfl/code/CommandHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paper/src/main/java/net/ttfl/code/PingListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paper/src/main/java/net/ttfl/code/TiaCustomOnline.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paper/src/main/resources/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paper/src/main/resources/plugin.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+    <list default="true" id="1f4c1c1b-f511-4914-9514-3ad47ecd51fe" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/lib/EvalEx-3.3.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bungeecord/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bungeecord/src/main/java/net/ttfl/code/AmountCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ttfl/code/bungeecord/AmountCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bungeecord/src/main/java/net/ttfl/code/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ttfl/code/bungeecord/CommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bungeecord/src/main/java/net/ttfl/code/PingListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ttfl/code/bungeecord/PingListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bungeecord/src/main/java/net/ttfl/code/TiaCustomOnline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ttfl/code/bungeecord/TiaCustomOnline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bungeecord/src/main/resources/bungee.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bungee.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bungeecord/src/main/resources/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paper/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paper/src/main/java/net/ttfl/code/AmountCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ttfl/code/paper/AmountCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paper/src/main/java/net/ttfl/code/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ttfl/code/paper/CommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paper/src/main/java/net/ttfl/code/PingListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ttfl/code/paper/PingListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paper/src/main/java/net/ttfl/code/TiaCustomOnline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ttfl/code/paper/TiaCustomOnline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paper/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paper/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,12 +76,21 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/Coding/Minecraft/TiaCustomOnline/bungeecord/src/main/resources"
+    "last_opened_file_path": "D:/Coding/Minecraft/TiaFakeList",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.17799044"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Coding\Minecraft\TiaCustomOnline\src\main\resources" />
+      <recent name="D:\Coding\Minecraft\TiaCustomOnline\src\main\java\net\ttfl\code\paper" />
+      <recent name="D:\Coding\Minecraft\TiaCustomOnline\src\main\java\net\ttfl\code\bungeecord" />
       <recent name="D:\Coding\Minecraft\TiaCustomOnline\bungeecord\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Coding\Minecraft\TiaCustomOnline\lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="net.ttfl.code" />
@@ -101,9 +105,20 @@
       <option name="presentableId" value="Default" />
       <updated>1720623453596</updated>
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1720664927567</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720664927567</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>

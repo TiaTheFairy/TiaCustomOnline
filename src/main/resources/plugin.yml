@@ -1,6 +1,7 @@
 name: TiaCustomOnline
-main: net.ttfl.code.TiaCustomOnline
+main: net.ttfl.code.paper.TiaCustomOnline
 version: '${version}'
+author: TiaTheFairyLand
 api-version: 1.20
 softdepend: [PlaceholderAPI]
 

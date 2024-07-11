@@ -1,0 +1,58 @@
+#   Tia's Custom Online plugin
+#   Visit my site for more Tia's plugin
+#   https://code.ttfl.net/minecraft
+
+
+###################################################
+
+#                Bungee Version
+#                     of
+#              Tia Custom Online
+
+# Install this only on Paper and its forks!
+
+###################################################
+
+
+max:
+  # Should plugin handle max amount?
+  # If true, %max% in this plugin would also use this value.
+  enable: true
+  amount: 400
+
+online:
+  enable: true
+  # Must be one of the modes. If this string is wrong, real online will be used.
+  mode: random-timed
+
+  # Config the amount counter in this section.
+  # You can use %online% %max% in math patterns.
+  # Use "%online%“ for real online amount.
+  # Use "%max%” for real max amount.
+  # For more detailed information, visit the wiki.
+
+  modes:
+    # Custom math pattern
+    custom:
+      amount: "min(%max%, 20 + sqrt(%online%) * 2)"
+
+    random:
+      min: "20 + %online%"
+      max: "min(50 + %online%, %max%)"
+
+    timed:
+      # Stably increase/decrease and reach min/max at minTime/maxTime
+      min: "20 + %online%"
+      max: "min(50 + %online%, %max%)"
+      min-time: 3
+      max-time: 18
+
+    random-timed:
+      # Increase/decrease with time but random in range.
+      # This looks the best.
+      min-random: "4"
+      max-random: "8"
+      min: "20 + %online%"
+      max: "min(50 + %online%, %max%)"
+      min-time: 03
+      max-time: 18
